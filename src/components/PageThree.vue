@@ -3,7 +3,7 @@
     <div
       class="container mx-auto my-4 flex flex-col items-center justify-center p-4"
     >
-      <h1 class="text-2xl font-bold text-slate-600">Tugas #3</h1>
+      <h1 class="text-2xl font-bold text-slate-600">Latihan #3</h1>
       <div class="w-2/3 text-center my-4">
         <p class="flex items-center gap-2">
           Ketika mengetikkan nama dan alamat diatas lalu disubmit, maka
