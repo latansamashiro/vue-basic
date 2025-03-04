@@ -13,7 +13,7 @@ const toggleReadonly = () => {
     <div
       class="container mx-auto my-4 flex flex-col items-center justify-center p-4"
     >
-      <h1 class="text-2xl font-bold text-slate-600">Tugas #2</h1>
+      <h1 class="text-2xl font-bold text-slate-600">Latihan #2</h1>
       <div class="flex items-center justify-center mt-4 flex-col gap-4">
         <input
           type="text"
@@ -48,7 +48,11 @@ const toggleReadonly = () => {
               berganti menjadi readonly dan sebaliknya.
               <span
                 class="w-12 flex items-center justify-center px-2 py-1"
-                :class="isReadonly ? 'bg-green-400 text-slate-100' : 'bg-red-400 text-slate-100'"
+                :class="
+                  isReadonly
+                    ? 'bg-green-400 text-slate-100'
+                    : 'bg-red-400 text-slate-100'
+                "
               >
                 {{ isReadonly ? "ON" : "OFF" }}
               </span>

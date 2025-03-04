@@ -10,12 +10,12 @@
       <RouterLink
         to="/page-two"
         class="px-4 py-2 text-white bg-green-500 rounded cursor-pointer"
-        >Tugas #2</RouterLink
+        >Latihan #2</RouterLink
       >
       <RouterLink
         to="/page-three"
         class="px-4 py-2 text-white bg-blue-500 rounded cursor-pointer"
-        >Tugas #3</RouterLink
+        >Latihan #3</RouterLink
       >
     </div>
   </div>
