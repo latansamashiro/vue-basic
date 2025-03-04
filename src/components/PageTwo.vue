@@ -1,7 +1,6 @@
 <script setup>
-  import { ref } from 'vue'
-
-  const inputText = ref("")
+import { ref } from "vue";
+const inputText = ref("");
 </script>
 
 <template>
@@ -18,11 +17,32 @@
           placeholder="Masukkan Nama"
         />
         <p class="text-md font-medium text-slate-600">Hasil: {{ inputText }}</p>
-        <p class="text-md font-medium text-slate-600">
-          Tugas: Ketika mengetik di atas, tampilkan hasil nya secara dinamis,
-          misal mengetikkan "Kucing", maka tampilkan "Kucing" sesuai dengan yang
-          diketikkan.
-        </p>
+        <button
+          class="px-4 py-2 text-white bg-blue-500 rounded cursor-pointer hover:bg-blue-600"
+          @click.prevent=""
+        >
+          Toggle Reodonly
+        </button>
+        <p class="text-md font-medium text-slate-600">Tugas:</p>
+        <ol class="list-decimal">
+          <li>
+            <p class="flex items-center gap-2">
+              Ketika mengetik di atas, tampilkan hasil nya secara dinamis, misal
+              mengetikkan "Kucing", maka tampilkan "Kucing" sesuai dengan yang
+              diketikkan.
+              <span
+                class="w-12 flex items-center justify-center px-2 py-1 bg-green-400 rounded text-slate-100"
+                >OK</span
+              >
+            </p>
+          </li>
+          <li>
+            <p class="flex items-center gap-2">
+              Ketika klik tombol "Toggle Readonly" maka input element akan
+              berganti menjadi readonly dan sebaliknya.
+            </p>
+          </li>
+        </ol>
       </div>
     </div>
   </div>
