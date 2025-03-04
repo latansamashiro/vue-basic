@@ -4,11 +4,17 @@
       class="container mx-auto my-4 flex flex-col items-center justify-center p-4"
     >
       <h1 class="text-2xl font-bold text-slate-600">Latihan #3</h1>
-      <div class="w-2/3 text-center my-4">
-        <p class="flex items-center gap-2">
+      <div class="w-2/3 my-4">
+        <p class="text-center">
           Ketika mengetikkan nama dan alamat diatas lalu disubmit, maka
           tampilkan hasilnya pada tabel dan hasil sebelumnya tidak boleh hilang,
-          namun terus bertambah dengan hasil submit yang baru.
+          namun terus bertambah dengan hasil submit yang baru. [<a
+            class="text-blue-500 hover:underline"
+            target="_blank"
+            href="https://cloud.unilam.ac.id/s/nw9oDMEzNH92jzz"
+          >
+            Lihat Hasil </a
+          >]
         </p>
       </div>
       <div class="flex items-center justify-center mt-4 flex-col gap-4 w-2/3">
