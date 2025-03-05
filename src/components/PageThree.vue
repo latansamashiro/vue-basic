@@ -8,13 +8,12 @@ const submitForm = () => {
   if (name.value.trim() && address.value.trim()) {
     submittedData.value.push({
       name: name.value,
-      address: address.value
+      address: address.value,
     });
     name.value = "";
     address.value = "";
   }
 };
-
 </script>
 
 <template>
@@ -63,16 +62,24 @@ const submitForm = () => {
                 <tr>
                   <th scope="col" class="px-6 py-3">Nama</th>
                   <th scope="col" class="px-6 py-3">Alamat</th>
+                  <th scope="col" class="px-6 py-3">Opsi</th>
                 </tr>
               </thead>
               <tbody>
                 <tr class="bg-white border-b border-gray-200">
                   <td class="px-6 py-4">Moch Diki Widianto</td>
                   <td class="px-6 py-4">Rangkasbitung</td>
+                  <td class="px-6 py-4">
+                    <button
+                      class="px-2 py-1 text-sm text-white bg-red-500 rounded cursor-pointer hover:bg-red-600"
+                    >
+                      Hapus
+                    </button>
+                  </td>
                 </tr>
-                <tr 
-                  v-for="(data, index) in submittedData" 
-                  :key="index" 
+                <tr
+                  v-for="(data, index) in submittedData"
+                  :key="index"
                   class="bg-white border-b border-gray-200"
                 >
                   <td class="px-6 py-4">{{ data.name }}</td>
