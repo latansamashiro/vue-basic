@@ -14,6 +14,9 @@ const submitForm = () => {
     address.value = "";
   }
 };
+const deleteData = (index) => {
+  submittedData.value.splice(index, 1);
+};
 </script>
 
 <template>
@@ -72,6 +75,7 @@ const submitForm = () => {
                   <td class="px-6 py-4">
                     <button
                       class="px-2 py-1 text-sm text-white bg-red-500 rounded cursor-pointer hover:bg-red-600"
+                      @click.prevent=""
                     >
                       Hapus
                     </button>
@@ -84,6 +88,12 @@ const submitForm = () => {
                 >
                   <td class="px-6 py-4">{{ data.name }}</td>
                   <td class="px-6 py-4">{{ data.address }}</td>
+                  <button
+                      class="px-2 py-1 text-sm text-white bg-red-500 rounded cursor-pointer hover:bg-red-600"
+                      @click.prevent="deleteData(index)"
+                    >
+                      Hapus
+                    </button>
                 </tr>
               </tbody>
             </table>
